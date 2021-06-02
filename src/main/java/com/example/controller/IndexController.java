@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import com.example.model.Person;
+import com.example.model.PersonDto;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +13,7 @@ public class IndexController {
   @GetMapping("/")
   public String index(Model model) {
     log.info("This is Index Controller");
-    model.addAttribute("person", new Person(101, "ABC"));
+    model.addAttribute("person", new PersonDto(101, "ABC"));
     return "index";
   }
 }

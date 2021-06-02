@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Person implements Serializable {
+public class PersonDto implements Serializable {
 
   private static final long serialVersionUID = 4458787878545452L;
   private int id;
